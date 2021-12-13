@@ -1,0 +1,9 @@
+li = ['J', 'U', 'N', 'G', 'O', 'L']
+
+
+ch = input()
+
+if ch in li:
+    print(li.index(ch))
+else:
+    print('none')
