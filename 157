@@ -1,0 +1,15 @@
+li = list(map(int,input().split()))
+sum_ = 0
+count = 0
+
+
+for i in li:
+    if i == 0:
+        break
+    if i%5 == 0:
+        sum_ += i
+        count += 1
+
+print(f'Multiples of 5 : {count}') 
+print(f'sum : {sum_}')
+print(f'avg : {sum_/count:.1f}') 
