@@ -1,0 +1,7 @@
+# 배열 1
+
+li = input().split()
+
+li.reverse()
+
+print(*li)
