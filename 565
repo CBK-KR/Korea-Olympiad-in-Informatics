@@ -1,0 +1,11 @@
+li = list(map(int,input().split()))
+num = []
+
+for i in li:
+    if i == 0:
+        break
+    num.append((i%100)//10)
+
+for i in range(10):
+    if i in num:
+        print(f'{i} : {num.count(i)}')
