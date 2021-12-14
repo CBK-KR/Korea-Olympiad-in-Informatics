@@ -1,0 +1,11 @@
+li = input().split()
+text = []
+
+for i in li:
+    if i.isupper():
+        text.append(i)
+
+for i in range(65, 91):
+    ch = chr(i)
+    if ch in text:
+        print(f'{ch} : {text.count(ch)}')
