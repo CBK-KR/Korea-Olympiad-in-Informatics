@@ -1,0 +1,20 @@
+li = []
+
+for _ in range(4):
+    li.append(list(map(int,input().split())))
+
+
+avg_v = [0,0,0,0]
+avg_h = [0,0]
+avg = 0
+
+
+for i in range(4):
+    for j in range(2):
+        avg_v[i] += li[i][j]
+        avg_h[j] += li[i][j]
+        avg += li[i][j]
+
+print(*[ i//2 for i in avg_v ])
+print(*[ i//4 for i in avg_h ])
+print(avg//8)
