@@ -1,0 +1,21 @@
+print('first array')
+li1 = []
+
+for _ in range(2):
+    li1.append(list(map(int,input().split())))
+
+
+print('second array')
+li2 = []
+for _ in range(2):
+    li2.append(list(map(int,input().split())))
+
+li3 = [[],[]]
+
+for i in range(2):
+    for j in range(3):
+        li3[i].append(li1[i][j] * li2[i][j])
+
+for i in li3:
+    print(*i)
+    
