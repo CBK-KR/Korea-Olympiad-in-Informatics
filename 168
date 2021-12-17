@@ -1,0 +1,13 @@
+n = int(input())
+
+li = [[0 for _ in range(i+1)] for i in range(n)]
+
+for i in range(len(li)):
+    for j in range(len(li[i])):
+        if j == 0 or j == i:
+            li[i][j] = 1
+        else:
+            li[i][j] = (li[i-1][j] + li[i-1][j-1])
+
+for i in reversed(li):
+    print(*i)
