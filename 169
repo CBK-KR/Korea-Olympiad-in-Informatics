@@ -1,0 +1,9 @@
+li = []
+
+for i in range(3):
+    li.append(input().split())
+
+for i in li:
+    for j in i:
+        print(j.lower(),end=' ')
+    print()
