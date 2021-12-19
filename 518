@@ -1,0 +1,5 @@
+a = float(input("yard? "))
+
+yard = 91.44
+
+print("{}yard = {:.1f}cm".format(a, yard*a))
