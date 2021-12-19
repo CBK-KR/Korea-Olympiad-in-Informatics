@@ -1,0 +1,4 @@
+a, b = list(map(int,input().split()))
+
+print(int(bool(a) & bool(b)), end=' ') # 논리곱 (AND연산 = 둘다 1이여야지만 True가 성립하는)
+print(int(bool(a) | bool(b))) # 논리합 (OR연산 = 둘 중 하나만 1이어도 
