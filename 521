@@ -1,0 +1,6 @@
+a, b = list(map(int,input().split()))
+
+b = b - 1
+mul = a*b
+a = a + 1
+print(a, b, mul)
