@@ -1,0 +1,17 @@
+def calculation(x, ch, y):
+    if ch =='+':
+        print(f'{x} {ch} {y} = {x+y}')
+    elif ch == '-':
+        print(f'{x} {ch} {y} = {x-y}')
+    elif ch == '*':
+        print(f'{x} {ch} {y} = {x*y}')
+    elif ch ==  '/':
+        print(f'{x} {ch} {y} = {x//y}')
+    else:
+        print(f'{x} {ch} {y} = 0')
+
+
+x, ch, y = input().split()
+x = int(x)
+y = int(y)
+calculation(x,ch,y)
