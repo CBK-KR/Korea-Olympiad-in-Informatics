@@ -1,0 +1,7 @@
+def text_print():
+    print('~!@#$^&*()_+|')
+
+n = int(input())
+
+for i in range(n):
+    text_print()
